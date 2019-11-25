@@ -1,8 +1,8 @@
 const express = require("express");
-const server = express();
+const app = express();
 
-server.get("/", (req, res) => res.send("ok"));
+app.get("/", (req, res) => res.send("ok"));
 
-server.listen(3001, () => {
+app.listen(3001, () => {
   console.log("Servidor iniciado");
 });
